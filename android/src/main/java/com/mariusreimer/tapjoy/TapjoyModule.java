@@ -291,7 +291,8 @@ public class TapjoyModule extends ReactContextBaseJavaModule {
 
     @ReactMethod
     public void registerForPushNotifications(String gcmSenderId) {
-        Tapjoy.setGcmSender(gcmSenderId);
+        // 12.9.1 (2022-03-01) 기준 제거된 API 입니다.
+//        Tapjoy.setGcmSender(gcmSenderId);
     }
 
     @ReactMethod
